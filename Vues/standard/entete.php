@@ -2,11 +2,14 @@
  echo '<header> <h1>Titre</h1></header>';
 
  $tableau = [
+    //name and link
     "Base de donnée" => "database",
     "Un bateau" => "boat",
     "Notre exemple" => "exemple",
     "Form" => "testform",
     "Hello world" => "defaut",
+    "Students" => "student",
+
  ]
 
 ?>
@@ -19,8 +22,6 @@
                     </li>';
             }
         ?>
-
-
     </ul>
 </strong>
 <br>

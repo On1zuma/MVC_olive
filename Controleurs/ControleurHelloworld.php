@@ -41,4 +41,17 @@ final class ControleurHelloworld
         $O_POST =  new Helloworld();
         Vue::montrer('helloworld/testform', array('salut' =>  $O_POST->postData()));//postData fonction entrer des données dans la bdd
     }
+
+    //http://localhost:8080/index.php?url=helloworld/students
+    public function studentAction()
+    {
+        $O_GET = new Helloworld();
+        Vue::montrer('helloworld/student', array('ourStudents' => $O_GET->getStudent()));
+    }
+
+    public function poststudentAction()
+    {
+        $O_POST = new Helloworld();
+        Vue::montrer('helloworld/student', array('salut' => $O_POST->postStudent()));
+    }
 }
